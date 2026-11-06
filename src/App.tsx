@@ -39,10 +39,34 @@ function App(){
             <span className="text-xl font-extrabold tracking-wide">BLACK<span className="text-[#eab52e]">VINCIS</span></span>
           </a>
 
-        
+          {/*Menu*/}
+          <div className="hidden items-center gap-9 lg:flex">
+            <a href="#solucoes" className="flex items-center gap-2 text-sm text-gray-300 transition hover:text-[#eab52e]">
+              Inicio
+            </a>
+
+            <a href="#servicos" className="flex items-center gap-2 text-sm text-gray-300 transition hover:text-[#eab52e]">
+              Soluções <ChevronDown size={16} />
+            </a>
+
+            <a href="#sobre" className="text-sm text-gray-300 transition hover:text-[#eab52e]">
+              Sobre Nós
+            </a>
+
+            <a href="#blog" className="text-sm text-gray-300 transition hover:text-[#eab52e]">
+              Parceiros
+            </a>
+
+            <a href="#contato" className="text-sm text-gray-300 transition hover:text-[#eab52e]">
+              Contato
+            </a>
+          </div>
+
 
         </nav>
       </header>
     </main>
   )
 }
+
+export default App
