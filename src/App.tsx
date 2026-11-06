@@ -27,7 +27,22 @@ function App(){
 
   return(
     <main className="min-h-screen overflow-hidden bg-[#050505] text-white">
-      
+      <header className="relative z-50 border-b border-white/10 bg-black/90">
+        <nav className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-5 lg:px-12">
+
+
+          {/*logo*/}
+          <a href="#" className="flex items-center gap-3">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#dcae37]">
+              <Shield className="h-8 w-8 text-[#eab52e]" />
+            </div>
+            <span className="text-xl font-extrabold tracking-wide">BLACK<span className="text-[#eab52e]">VINCIS</span></span>
+          </a>
+
+        
+
+        </nav>
+      </header>
     </main>
   )
 }
