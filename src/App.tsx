@@ -81,8 +81,17 @@ function App(){
         )}
       </header> 
 
-
-      
+      <section className="relative mx-auto flex min-h-[780px] max-w-[1500px] items-center px-6 py-20 lg:px-12">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_75%_50%,rgba(201,146,31,0.13),transparent_55%)]"/>
+        <div className="relative z-20 w-full lg:w-[58%]">
+          <p className="mb-7 text-sm font-semibold uppercase tracking-[0.5em] text-[#eab52e]">Cibersegurança de verdade</p>
+          <h1 className="max-w-4xl text-5xl font-extrabold leading-[1.08] tracking-tight sm:text-6xl lg:text-[76px]">Protegendo o seu<br />mundo digital<br />
+            <span className="text-[#eab52e]">contra ameaças reais.</span>
+          </h1>
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-gray-400 sm:text-xl">Soluções avançadas em cibersegurança para proteger seus dados, sua empresa e seu futuro.</p>
+        </div>
+       
+      </section>
     </main>
   )
 }
