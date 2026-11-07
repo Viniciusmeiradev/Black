@@ -39,7 +39,7 @@ function App(){
             <span className="text-xl font-extrabold tracking-wide">BLACK<span className="text-[#eab52e]">VINCIS</span></span>
           </a>
 
-          {/*Menu*/}
+          {/*MenuSite*/}
           <div className="hidden items-center gap-9 lg:flex">
             <a href="#solucoes" className="flex items-center gap-2 text-sm text-gray-300 transition hover:text-[#eab52e]">Inicio</a>
 
@@ -51,13 +51,38 @@ function App(){
 
             <a href="#contato" className="text-sm text-gray-300 transition hover:text-[#eab52e]">Contato</a>
           </div>
-
           <a href="#contato" className="hidden items-center gap-3 rounded-full border border-[#eab52e] px-6 py-3 text-sm font-medium text-[#eab52e] transition hover:bg-[#eab52e] hover:text-black lg:flex">Proteja sua empresa<ArrowRight size={18} /></a>
+  
+
+          {/*Botao Mobile*/}
           <button onClick={() => setMenuOpen(!menuOpen)}
-            className="text-[#eab52e] lg:hidden" arial-></button>
-          
+            className="text-[#eab52e] lg:hidden" arial-label = "Abrir menu"> {menuOpen ? <X size={28}/> : <Menu size={28}/> } </button>
         </nav>
+
+
+        {/*Menu Mobile*/}
+        {menuOpen && (
+          <div className="absolute left-0 top-full flex w-full flex-col gap-6 border-b border-white/10 bg-[#080808] p-7 lg:hidden">"
+            {[
+              ['Inicio', '#inicio'],
+              ['Soluçoes', '#soluçoes'],
+              ['Sobre Nós', '#sobre'],
+              ['Parceiros', '#parceiros'],
+              ['Contato', '#contato'],
+            ].map(([label, link]) => (
+              <a key={label}  
+                href={link}  
+                onClick ={() => setMenuOpen(false)}  
+                className="text-gray-300 transition hover:text-[#eab52e]">
+                {label}
+              </a>
+            ))}
+          </div>
+        )}
       </header> 
+
+
+      
     </main>
   )
 }
