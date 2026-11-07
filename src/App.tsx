@@ -113,7 +113,35 @@ function App(){
       </section>
 
 
+      <section  id="solucoes" className="relative border-t border-white/10 bg-[#080808] px-6 py-12 lg:px-12">
+        <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {features.map((feature) => {const Icon = feature.icon
+            return( <div key = {feature.title}  className="flex items-center gap-4 border-b border-white/10 pb-6 transition hover:border-[#eab52e] lg:border-b-0 lg:border-r lg:pb-0">
+              <Icon className="h-9 w-9 shrink-0 text-[#eab52e]"/>
 
+              <div>
+                <h3 className="font-semibold text-white">{feature.title}</h3>
+                 <p className="mt-1 text-sm text-gray-500">{feature.description}</p>
+              </div>
+            </div>
+            )
+          })}
+        </div>
+      </section>
+      
+
+      {/*Serviços */}
+      <section  id="servicos" className="mx-auto max-w-[1400px] px-6 py-28 lg:px-12">
+        <div className="max-w-2xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#eab52e]">Nossas soluções</p>
+          <h2 className="text-4xl font-bold sm:text-5xl">Segurança digital para um mundo em constante evolução.</h2>
+          <p className="mt-6 leading-relaxed text-gray-400"> Protegemos empresas contra riscos digitais através de tecnologia, estratégia e inteligência em segurança.</p>
+        </div>
+
+        <div className="mt-14 grid gap-6 md:grid-cols-3">
+          
+        </div>
+      </section>
     </main>
   )
 }
