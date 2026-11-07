@@ -41,30 +41,23 @@ function App(){
 
           {/*Menu*/}
           <div className="hidden items-center gap-9 lg:flex">
-            <a href="#solucoes" className="flex items-center gap-2 text-sm text-gray-300 transition hover:text-[#eab52e]">
-              Inicio
-            </a>
+            <a href="#solucoes" className="flex items-center gap-2 text-sm text-gray-300 transition hover:text-[#eab52e]">Inicio</a>
 
-            <a href="#servicos" className="flex items-center gap-2 text-sm text-gray-300 transition hover:text-[#eab52e]">
-              Soluções <ChevronDown size={16} />
-            </a>
+            <a href="#servicos" className="flex items-center gap-2 text-sm text-gray-300 transition hover:text-[#eab52e]">Soluções <ChevronDown size={16} /></a>
 
-            <a href="#sobre" className="text-sm text-gray-300 transition hover:text-[#eab52e]">
-              Sobre Nós
-            </a>
+            <a href="#sobre" className="text-sm text-gray-300 transition hover:text-[#eab52e]">Sobre Nós</a>
 
-            <a href="#blog" className="text-sm text-gray-300 transition hover:text-[#eab52e]">
-              Parceiros
-            </a>
+            <a href="#blog" className="text-sm text-gray-300 transition hover:text-[#eab52e]">Parceiros</a>
 
-            <a href="#contato" className="text-sm text-gray-300 transition hover:text-[#eab52e]">
-              Contato
-            </a>
+            <a href="#contato" className="text-sm text-gray-300 transition hover:text-[#eab52e]">Contato</a>
           </div>
 
-
+          <a href="#contato" className="hidden items-center gap-3 rounded-full border border-[#eab52e] px-6 py-3 text-sm font-medium text-[#eab52e] transition hover:bg-[#eab52e] hover:text-black lg:flex">Proteja sua empresa<ArrowRight size={18} /></a>
+          <button onClick={() => setMenuOpen(!menuOpen)}
+            className="text-[#eab52e] lg:hidden" arial-></button>
+          
         </nav>
-      </header>
+      </header> 
     </main>
   )
 }
