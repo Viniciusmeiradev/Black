@@ -89,9 +89,31 @@ function App(){
             <span className="text-[#eab52e]">contra ameaças reais.</span>
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-gray-400 sm:text-xl">Soluções avançadas em cibersegurança para proteger seus dados, sua empresa e seu futuro.</p>
+
+
+          <div className="mt-10 flex flex-wrap items-center gap-5">
+            <a href="#solucoes" className="flex items-center gap-3 rounded-full bg-[#eab52e] px-7 py-4 font-semibold text-black transition hover:bg-[#ffd05b] hover:shadow-[0_0_30px_rgba(234,181,46,0.25)]"> 
+              <ShieldCheck size={22} />Conheça nossas soluções<ArrowRight size={19}/>
+            </a>
+
+            <a href="#sobre" className="flex items-center gap-3 rounded-full border border-white/50 px-7 py-4 font-medium transition hover:border-[#eab52e] hover:text-[#eab52e]">
+              <Play size={20} /> Assistir vídeo
+            </a>
+
+          </div>
         </div>
-       
+
+
+        {/*Background Imagem */}
+        <div className="pointer-events-none absolute right-[-5%] top-1/2 hidden h-[720px] w-[58%] -translate-y-1/2 lg:block">
+          <img src="/cyber_cobra.png" className="h-full w-full object-cover object-[85%_center] opacity-90"
+            style={{ maskImage: 'linear-gradient(to right, transparent 0%, black 25%)',}}
+          />
+        </div>
       </section>
+
+
+
     </main>
   )
 }
