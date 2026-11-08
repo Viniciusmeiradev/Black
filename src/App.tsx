@@ -139,9 +139,28 @@ function App(){
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
-          
+          {[
+            {
+              title: 'Segurança de Redes', description: 'Proteção de infraestrutura, redes e ambientes corporativos.',
+            },
+            {
+              title: 'Testes de Intrusão', description: 'Identificação de vulnerabilidades antes que sejam exploradas.',
+            },
+            {
+              title: 'Proteção de Dados', description: 'Estratégias para manter informações seguras e confidenciais.',
+            },
+            ].map((service) => (<article key={service.title} 
+            className="group rounded-2xl border border-white/10 bg-[#0b0b0b] p-8 transition hover:-translate-y-2 hover:border-[#eab52e]/60">
+              <ShieldCheck className="mb-6 h-10 w-10 text-[#eab52e]" />
+              <h3 className="text-xl font-bold"> {service.title} </h3>
+              <p className="mt-4 leading-relaxed text-gray-400"> {service.description} </p>
+              <a href="#contato" className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#eab52e]">Saiba mais <ArrowRight size={17} /></a>
+            </article>
+          ))}
         </div>
       </section>
+
+      
     </main>
   )
 }
