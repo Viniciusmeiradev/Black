@@ -176,8 +176,15 @@ function App(){
       
       {/*Contatos */}
       <section id="contato" className="px-6 py-24 text-center">
-
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#eab52e]"> Fale com nossos especialistas</p>
+        <h2 className="mt-5 text-4xl font-bold sm:text-5xl"> Proteja seu futuro digital. </h2>
+        <p className="mx-auto mt-5 max-w-xl text-gray-400"> Entre em contato e descubra como podemos ajudar a proteger sua empresa.</p>
+        <a href="blackvincisadm@gmail.com"
+          className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#eab52e] px-8 py-4 font-semibold text-black transition hover:bg-[#ffd05b]">
+            Entre em contato <ArrowRight size={19} />
+        </a>
       </section>
+      
 
     </main>
   )
