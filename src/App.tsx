@@ -161,6 +161,24 @@ function App(){
       </section>
 
       
+      {/*Sobre */}
+      <section id="sobre" className="border-y border-white/10 bg-[#0a0a0a] px-6 py-24 lg:px-12">
+          <div className="mx-auto max-w-[1200px] text-center">
+            <Shield className="mx-auto mb-6 h-14 w-14 text-[#eab52e]" />
+            <h2 className="text-4xl font-bold"> Sua segurança é nossa missão. </h2>
+
+            <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-gray-400"> Acreditamos que a segurança digital deve ser uma prioridade.
+              Trabalhamos para proporcionar proteção, confiança e tranquilidade para empresas que desejam crescer com segurança.
+            </p>
+          </div>
+      </section>
+
+      
+      {/*Contatos */}
+      <section id="contato" className="px-6 py-24 text-center">
+
+      </section>
+
     </main>
   )
 }
