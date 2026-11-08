@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import {Shield, ShieldCheck, LockKeyhole, Zap, Handshake, ArrowRight, Play, ChevronDown, Menu, X,} from 'lucide-react'
+import Footer from './components/Footer'
 
 function App(){
   const [menuOpen, setMenuOpen] = useState(false)
@@ -184,8 +185,10 @@ function App(){
             Entre em contato <ArrowRight size={19} />
         </a>
       </section>
-      
 
+      
+      {/*Rodape */}
+      <Footer />
     </main>
   )
 }
