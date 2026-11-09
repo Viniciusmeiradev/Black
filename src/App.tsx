@@ -33,9 +33,9 @@ function App(){
 
 
           {/*logo*/}
-          <a href="#" className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#dcae37]">
-              <Shield className="h-8 w-8 text-[#eab52e]" />
+          <a href="/logo_blackvincis.png" className="flex items-center gap-3">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl ">
+              <img src="/logo_blackvincis.png" alt="Black Vincis" className="h-56 w-64 object-contain"/>
             </div>
             <span className="text-xl font-extrabold tracking-wide">BLACK<span className="text-[#eab52e]">VINCIS</span></span>
           </a>
