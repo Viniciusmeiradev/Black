@@ -3,33 +3,18 @@ import { Mail, Phone, MapPin } from 'lucide-react'
 function Footer() {
   return (
     <footer className="bg-gradient-to-r from-[#d9f4fc] via-[#ffffff] to-[#e5f5ff] text-black">
-
-      {/* CONTEÚDO PRINCIPAL */}
       <div className="mx-auto grid max-w-[1600px] grid-cols-1 gap-12 px-8 py-20 md:grid-cols-2 lg:grid-cols-4 lg:px-16">
 
         {/* LOGO */}
         <div className="flex flex-col items-center gap-8 lg:items-start">
-
-          <img
-            src="/logo-blackvincis.png"
-            alt="Black Vincis"
-            className="h-40 w-48 object-contain"
-          />
-
-          <a
-            href="#contato"
-            className="rounded-xl bg-[#f04427] px-9 py-5 text-xl font-medium text-white transition duration-300 hover:bg-[#d9361b] hover:shadow-lg"
-          >
-            Entre em Contato
-          </a>
-
+          <img src="/logo_blackvincis.png" alt="Black Vincis" className="h-40 w-48 object-contain"/>
+          <a href="#contato" className="rounded-xl bg-[#f04427] px-9 py-5 text-xl font-medium text-white transition duration-300 hover:bg-[#d9361b] hover:shadow-lg"> Entre em Contato</a>
         </div>
+        
 
         {/* CONTATO */}
         <div>
-          <h2 className="mb-7 text-3xl font-medium">
-            Contato
-          </h2>
+          <h2 className="mb-7 text-3xl font-medium">Contato</h2>
 
           <div className="flex flex-col gap-8 text-base">
 
