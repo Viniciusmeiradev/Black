@@ -202,14 +202,17 @@ function App(){
               <span className="block text-white">Sua Empresa precisa da{' '} <span className="text-[#eab52e]">Black Vincis.</span></span>
             </h2>
 
-             <div className="mt-8 space-y-6 text-base font-medium leading-8 text-gray-400 sm:text-lg">
+            <div className="mt-8 space-y-6 text-base font-medium leading-8 text-gray-400 sm:text-lg">
               <p>A cada{' '} <strong className="font-extrabold text-[#eab52e]">1 segundo </strong>{' '} acontecem milhares de tentativas de ataques cibernéticos em
                 escala global. Empresas de todos os setores estão vulneráveis e desesperadas por profissionais qualificados.</p>
 
               <p>O déficit global chegou a{' '} <strong className="font-extrabold text-[#eab52e]"> 4,8 milhões de vagas </strong>{' '}
-                não preenchidas. No Brasil, profissionais certificados ganham entre{' '} <strong className="font-extrabold text-[#eab52e]"> R$ 5.000 e R$ 40.000 </strong>{' '} por mês. </p>
-             </div>
+                não preenchidas. O Brasil é o segundo país mais vulnerável a ataques cibernéticos, de acordo com relatório da Trend Micro.  Em 2024 ocorreu {' '} <strong className="font-extrabold text-[#eab52e]"> 1,1 Bilhão </strong>{' '} de Dados vazados de acordo com relatório do ITRC. </p>
+            </div>
 
+            <a href="#trilhas" className="group mt-10 inline-flex items-center gap-3 rounded-full border-2 border-[#eab52e] px-8 py-5 text-sm font-extrabold 
+              uppercase tracking-wide text-[#eab52e] transition-all duration-300 hover:bg-[#eab52e] hover:text-black sm:text-base"> Ver trilhas de carreira <span className="text-xl transition-transform duration-300 group-hover:translate-x-2">→</span>
+            </a>
 
           </div>
         </div>
