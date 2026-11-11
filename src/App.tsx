@@ -199,8 +199,18 @@ function App(){
               <span className="text-sm font-extrabold uppercase tracking-[0.3em] text-[#eab52e]">Por que agora?</span>
             </div>
             <h2 className="text-4xl font-extrabold leading-[1.12] tracking-[-0.04em] sm:text-5xl lg:text-[56px]"> O mundo digital está sob ataque.
-              <span className="block text-white">O mercado precisa de{' '} <span className="text-[#eab52e]">você.</span></span>
+              <span className="block text-white">Sua Empresa precisa da{' '} <span className="text-[#eab52e]">Black Vincis.</span></span>
             </h2>
+
+             <div className="mt-8 space-y-6 text-base font-medium leading-8 text-gray-400 sm:text-lg">
+              <p>A cada{' '} <strong className="font-extrabold text-[#eab52e]">1 segundo </strong>{' '} acontecem milhares de tentativas de ataques cibernéticos em
+                escala global. Empresas de todos os setores estão vulneráveis e desesperadas por profissionais qualificados.</p>
+
+              <p>O déficit global chegou a{' '} <strong className="font-extrabold text-[#eab52e]"> 4,8 milhões de vagas </strong>{' '}
+                não preenchidas. No Brasil, profissionais certificados ganham entre{' '} <strong className="font-extrabold text-[#eab52e]"> R$ 5.000 e R$ 40.000 </strong>{' '} por mês. </p>
+             </div>
+
+
           </div>
         </div>
 
