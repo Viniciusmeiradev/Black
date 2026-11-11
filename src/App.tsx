@@ -186,6 +186,32 @@ function App(){
         </a>
       </section>
 
+
+
+      <section id="mercado" className="relative overflow-hidden bg-[#050505] px-6 py-24 text-white md:px-12 lg:px-20">
+        <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#eab52e]/5 blur-[150px]" />
+        <div className="relative z-10 mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-16 lg:grid-cols-2 lg:gap-20">
+          
+          {/* COLUNA ESQUERDA */}
+          <div className="max-w-2xl">
+            <div className="mb-7 flex items-center gap-3">
+              <span className="h-[2px] w-8 bg-[#eab52e]" />
+              <span className="text-sm font-extrabold uppercase tracking-[0.3em] text-[#eab52e]">Por que agora?</span>
+            </div>
+            <h2 className="text-4xl font-extrabold leading-[1.12] tracking-[-0.04em] sm:text-5xl lg:text-[56px]"> O mundo digital está sob ataque.
+              <span className="block text-white">O mercado precisa de{' '} <span className="text-[#eab52e]">você.</span></span>
+            </h2>
+          </div>
+        </div>
+
+      </section>
+
+
+      
+
+
+
+
       
       {/*Rodape */}
       <Footer />
@@ -194,4 +220,3 @@ function App(){
 }
 
 export default App
-/
