@@ -4,14 +4,15 @@ import Footer from './components/Footer'
 
 function App(){
   const [menuOpen, setMenuOpen] = useState(false)
-  const features = [
-    {
+  
+const features = [
+  {
     icon: ShieldCheck,
     title: 'Proteção Avançada',
     description: 'Segurança para seus dados e sistemas.',
   },
   {
-    icon: Zap, 
+    icon: Zap,
     title: 'Resposta Rápida',
     description: 'Monitoramento e respostas a ameaças.',
   },
@@ -24,6 +25,31 @@ function App(){
     icon: LockKeyhole,
     title: 'Confiança em Cada Detalhe',
     description: 'Sua segurança é nossa prioridade.',
+  },
+]
+
+const statistics = [
+  {
+    number: '1s',
+    title: 'A CADA 1 SEGUNDO',
+    description:
+      'Acontecem milhares de tentativas de ataques cibernéticos em escala global. (Microsoft Digital Defense Report)',
+    featured: true,
+  },
+  {
+    number: '4,8M',
+    description:
+      'Vagas não preenchidas globalmente em 2026. (ISC² Cybersecurity Workforce Study)',
+  },
+  {
+    number: 'R$30K',
+    description:
+      'Média salarial para especialistas sênior no Brasil. (Robert Half | Mercado de TI)',
+  },
+  {
+    number: '2030',
+    description:
+      'Quem dominar IA e cybersecurity será indispensável. (World Economic Forum)',
   },]
 
   return(
@@ -57,13 +83,13 @@ function App(){
 
           {/*Botao Mobile*/}
           <button onClick={() => setMenuOpen(!menuOpen)}
-            className="text-[#eab52e] lg:hidden" arial-label = "Abrir menu"> {menuOpen ? <X size={28}/> : <Menu size={28}/> } </button>
+            className="text-[#eab52e] lg:hidden" aria-label = "Abrir menu"> {menuOpen ? <X size={28}/> : <Menu size={28}/> } </button>
         </nav>
 
 
         {/*Menu Mobile*/}
         {menuOpen && (
-          <div className="absolute left-0 top-full flex w-full flex-col gap-6 border-b border-white/10 bg-[#080808] p-7 lg:hidden">"
+          <div className="absolute left-0 top-full flex w-full flex-col gap-6 border-b border-white/10 bg-[#080808] p-7 lg:hidden">
             {[
               ['Inicio', '#inicio'],
               ['Soluçoes', '#soluçoes'],
@@ -211,10 +237,53 @@ function App(){
             </div>
 
             <a href="#trilhas" className="group mt-10 inline-flex items-center gap-3 rounded-full border-2 border-[#eab52e] px-8 py-5 text-sm font-extrabold 
-              uppercase tracking-wide text-[#eab52e] transition-all duration-300 hover:bg-[#eab52e] hover:text-black sm:text-base"> Ver trilhas de carreira <span className="text-xl transition-transform duration-300 group-hover:translate-x-2">→</span>
+              uppercase tracking-wide text-[#eab52e] transition-all duration-300 hover:bg-[#eab52e] hover:text-black sm:text-base"> Ver nosso portifólio <span className="text-xl transition-transform duration-300 group-hover:translate-x-2">→</span>
             </a>
+          </div>
+
+
+          <div className="flex flex-col gap-5">
+
+            {statistics.map((feature) => (
+              <article
+                key={feature.number}
+                className={`group relative flex min-h-[132px] items-center gap-6 overflow-hidden rounded-2xl border border-white/[0.08] bg-[#0b0b0b] px-6 py-7 transition-all duration-300 hover:border-[#eab52e]/50 hover:bg-[#101010] sm:px-8 ${
+                  feature.featured
+                    ? 'border-l-[4px] border-l-[#eab52e]'
+                    : 'border-l-[3px] border-l-[#eab52e]/70'
+                }`}
+              >
+
+                {/* NÚMERO */}
+                <div className="flex min-w-[105px] items-center justify-center">
+                  <span className="text-4xl font-extrabold tracking-[-0.05em] text-[#eab52e] sm:text-5xl">
+                    {feature.number}
+                  </span>
+                </div>
+
+                {/* TEXTO */}
+                <div className="flex-1">
+
+                  {feature.title && (
+                    <h3 className="mb-2 text-base font-extrabold tracking-wide text-[#eab52e] sm:text-lg">
+                      {feature.title}
+                    </h3>
+                  )}
+
+                  <p className="text-sm font-medium leading-7 text-gray-400 sm:text-base">
+                    {feature.description}
+                  </p>
+
+                </div>
+
+                {/* DETALHE DECORATIVO */}
+                <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#eab52e]/[0.03] blur-2xl transition-all duration-300 group-hover:bg-[#eab52e]/10" />
+
+              </article>
+            ))}
 
           </div>
+
         </div>
 
       </section>
