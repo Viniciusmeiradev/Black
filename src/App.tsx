@@ -140,7 +140,7 @@ const statistics = [
       </section>
 
 
-      <section  id="solucoes" className="relative border-t border-white/10 bg-[#080808] px-6 py-12 lg:px-12">
+      <section  id="#solucoes" className="relative border-t border-white/10 bg-[#080808] px-6 py-12 lg:px-12">
         <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => {const Icon = feature.icon
             return( <div key = {feature.title}  className="flex items-center gap-4 border-b border-white/10 pb-6 transition hover:border-[#eab52e] lg:border-b-0 lg:border-r lg:pb-0">
@@ -158,7 +158,7 @@ const statistics = [
       
 
       {/*Serviços */}
-      <section  id="servicos" className="mx-auto max-w-[1400px] px-6 py-28 lg:px-12">
+      <section  id="#servicos" className="mx-auto max-w-[1400px] px-6 py-28 lg:px-12">
         <div className="max-w-2xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#eab52e]">Nossas soluções</p>
           <h2 className="text-4xl font-bold sm:text-5xl">Segurança digital para um mundo em constante evolução.</h2>
@@ -189,7 +189,7 @@ const statistics = [
 
       
       {/*Sobre */}
-      <section id="sobre" className="border-y border-white/10 bg-[#0a0a0a] px-6 py-24 lg:px-12">
+      <section id="#sobre" className="border-y border-white/10 bg-[#0a0a0a] px-6 py-24 lg:px-12">
           <div className="mx-auto max-w-[1200px] text-center">
             <Shield className="mx-auto mb-6 h-14 w-14 text-[#eab52e]" />
             <h2 className="text-4xl font-bold"> Sua segurança é nossa missão. </h2>
@@ -201,20 +201,8 @@ const statistics = [
       </section>
 
       
-      {/*Contatos */}
-      <section id="contato" className="px-6 py-24 text-center">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#eab52e]"> Fale com nossos especialistas</p>
-        <h2 className="mt-5 text-4xl font-bold sm:text-5xl"> Proteja seu futuro digital. </h2>
-        <p className="mx-auto mt-5 max-w-xl text-gray-400"> Entre em contato e descubra como podemos ajudar a proteger sua empresa.</p>
-        <a href="mailto:blackvincisadm@gmail.com"
-          className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#eab52e] px-8 py-4 font-semibold text-black transition hover:bg-[#ffd05b]">
-            Entre em contato <ArrowRight size={19} />
-        </a>
-      </section>
-
-
-
-      <section id="mercado" className="relative overflow-hidden bg-[#050505] px-6 py-24 text-white md:px-12 lg:px-20">
+      {/*Mercado */}
+      <section id="#mercado" className="relative overflow-hidden bg-[#050505] px-6 py-24 text-white md:px-12 lg:px-20">
         <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#eab52e]/5 blur-[150px]" />
         <div className="relative z-10 mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-16 lg:grid-cols-2 lg:gap-20">
           
@@ -287,12 +275,6 @@ const statistics = [
         </div>
 
       </section>
-
-
-      
-
-
-
 
       
       {/*Rodape */}
